@@ -1,0 +1,25 @@
+
+<h2 class="s" >Billingpage</h2>
+<div class="dec">
+  <p>Product Id  : 
+<input [(ngModel)] ="mid" placeholder="ProductId" class="addText"></p>
+<p> Quantity      :
+ <input [(ngModel)]="mqua" placeholder="Quantity" class="addText"></p>
+ <button (click)="pushItem1()" >Add</button>&nbsp;
+ 
+ <button (click)="pushItem2()" >Submit</button>
+
+ 
+ <table border='1' style="background-color:#f2f3f4">
+   
+   <tr><th>CODE</th> <th>NAME</th> <th>PRICE</th> <th>GST</th> <th>QUANTITY</th> <th>PRODUCT_PRICE</th></tr>
+ <tr *ngFor = "let data of people">
+    <td> {{data.product_code}}</td>
+    <td>{{data.product_name}}</td>
+    <td>{{data.price}}</td>
+    <td>{{data.gst}}</td>
+    <td>{{data.quantity}}</td>
+    <td>{{data.product_price}}</td>
+ </tr> 
+</table>
+</div>

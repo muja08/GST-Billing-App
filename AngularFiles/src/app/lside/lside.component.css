@@ -1,0 +1,11 @@
+.xyz
+{
+ float:left;
+ position: absolute; 
+ bottom:55%;
+ top:8%;
+ width:40%;
+ height:45%;  
+ overflow : auto;
+ background-color:#d2d1d1;
+}
